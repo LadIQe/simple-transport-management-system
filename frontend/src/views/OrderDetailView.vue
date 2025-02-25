@@ -26,7 +26,7 @@ watchEffect(() => {
 </script>
 
 <template>
-  <main class="order-detail-wrapper">
+  <div class="order-detail-wrapper">
     <h2 class="title">Order Detail</h2>
 
     <template v-if="orderStore.loadingDetail.isLoading">
@@ -73,7 +73,7 @@ watchEffect(() => {
         </span>
       </div>
     </template>
-  </main>
+  </div>
 </template>
 
 <style scoped>

@@ -1,7 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
 export enum RouteNames {
-  HOME = 'home',
+  CREATE = 'create',
+  LIST = 'list',
   DETAIL = 'detail',
 }
 
@@ -10,13 +11,24 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: RouteNames.HOME,
-      component: () => import('../views/HomeView.vue'),
-    },
-    {
-      path: '/order/:id',
-      name: RouteNames.DETAIL,
-      component: () => import('../views/OrderDetailView.vue')
+      component: () => import('../layout/TheMainLayout.vue'),
+      children: [
+        {
+          path: '',
+          name: RouteNames.LIST,
+          component: () => import('../views/ListView.vue'),
+        },
+        {
+          path: '/create',
+          name: RouteNames.CREATE,
+          component: () => import('../views/CreateOrderView.vue')
+        },
+        {
+          path: '/order/:id',
+          name: RouteNames.DETAIL,
+          component: () => import('../views/OrderDetailView.vue')
+        },
+      ]
     },
     {
       path: '/:pathMatch(.*)',

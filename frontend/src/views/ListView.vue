@@ -1,13 +1,11 @@
 <script setup lang="ts">
-import TheForm from '@/components/TheForm.vue';
 import TheOrderList from '@/components/TheOrderList.vue'
 </script>
 
 <template>
-  <main class="home-wrapper">
-    <TheForm />
+  <div class="home-wrapper">
     <TheOrderList />
-  </main>
+  </div>
 </template>
 
 <style scoped>

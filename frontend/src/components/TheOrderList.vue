@@ -93,6 +93,5 @@ watch(filters, () => {
   align-items: flex-start;
   border: 1px solid gray;
   padding: 1rem;
-  border-radius: 0.5rem;
 }
 </style>

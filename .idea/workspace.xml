@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="47a3ffd4-8895-4f3b-ba8d-936e3f4d34bd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/src/layout/TheMainLayout.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/views/ListView.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/assets/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/assets/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/TheOrderList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/TheOrderList.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/router/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/router/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/views/HomeView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/CreateOrderView.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/views/OrderDetailView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/OrderDetailView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/TheForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/TheForm.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/TheFormWaypoint.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/TheFormWaypoint.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/common/FieldWrapper.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/common/FieldWrapper.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,32 +44,33 @@
     <option name="autoscrollToSource" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.pycharm.django.structure.promotion.once.per.project": "true",
-    "git-widget-placeholder": "styled",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/adriankupcov/Developer/WWW/Innoliq/simple-transport-management-system/frontend/src/views",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "node",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "/Users/adriankupcov/Developer/WWW/Innoliq/simple-transport-management-system/frontend/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.pycharm.django.structure.promotion.once.per.project&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;styled&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/adriankupcov/Developer/WWW/Innoliq/simple-transport-management-system/frontend/src/views&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/adriankupcov/Developer/WWW/Innoliq/simple-transport-management-system/frontend/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "vue.recent.templates": [
-      "Vue Composition API Component"
+  &quot;keyToStringList&quot;: {
+    &quot;vue.recent.templates&quot;: [
+      &quot;Vue Composition API Component&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/frontend/src/views" />
@@ -315,6 +312,8 @@
       <workItem from="1740416789980" duration="211000" />
       <workItem from="1740417002658" duration="14570000" />
       <workItem from="1740469442280" duration="8281000" />
+      <workItem from="1740481485972" duration="10000" />
+      <workItem from="1740645885583" duration="1970000" />
     </task>
     <servers />
   </component>

@@ -34,16 +34,16 @@ watchEffect(() => {
 <template>
   <form @submit.prevent="submit">
     <div class="grid">
-      <FieldWrapper label="Customer Name">
-        <input id="customerName" type="text" v-model="formData.customerName" required />
+      <FieldWrapper v-model="formData.customerName" label="Customer Name" id="customerName" required>
+        <input type="text" />
       </FieldWrapper>
 
-      <FieldWrapper label="Order Number">
-        <input id="orderNumber" type="number" v-model="formData.orderNumber" required />
+      <FieldWrapper v-model="formData.orderNumber" label="Order Number" id="orderNumber" required>
+        <input type="number" />
       </FieldWrapper>
 
-      <FieldWrapper label="Order Date">
-        <input id="date" type="datetime-local" v-model="formData.date" required />
+      <FieldWrapper v-model="formData.date" label="Order Date" id="date" required>
+        <input type="datetime-local" />
       </FieldWrapper>
 
       <div class="waypoints">

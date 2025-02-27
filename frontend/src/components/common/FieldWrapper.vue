@@ -1,18 +1,39 @@
 <script setup lang="ts">
-import { useSlots } from 'vue'
+import { h } from 'vue'
+
+type ElementEvent = EventTarget & {
+  value: string | number | Date | undefined
+}
 
 defineOptions({
   name: 'FieldWrapper'
 })
 
-defineProps({
-  label: String
-})
+const props = defineProps<{
+  id: string
+  label: string
+  required?: boolean
+}>()
+const slot = defineSlots<{
+  default: () => (HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement)[]
+}>()
+const model = defineModel<string | number | Date>()
 
-const slot = useSlots()
-const element = slot.default?.()[0] || null
-const id = element?.props?.id || ''
-const required = element?.props?.required === '' || false
+const createElement = () => {
+  const element = slot.default()[0]
+
+  return h(
+    element,
+    {
+      id: props.id,
+      required: props.required,
+      value: model.value,
+      onChange: ({ target }: { target: ElementEvent }) => {
+        model.value = target.value
+      }
+    }
+  )
+}
 </script>
 
 <template>
@@ -22,7 +43,7 @@ const required = element?.props?.required === '' || false
       <span v-if="required">*</span>
     </label>
 
-    <slot />
+    <component :is="createElement()" />
   </div>
 </template>
 

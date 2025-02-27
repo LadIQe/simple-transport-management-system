@@ -35,28 +35,28 @@ function addWaypoint() {
       <div v-for="(waypoint, idx) in model" :key="idx">
         <div><span>Waypoint {{ idx + 1 }}</span></div>
 
-        <FieldWrapper label="Street name">
-          <input id="type" type="text" v-model="waypoint.streetName" required />
+        <FieldWrapper v-model="waypoint.streetName" label="Street name" id="type" required>
+          <input type="text" />
         </FieldWrapper>
 
-        <FieldWrapper label="Street number">
-          <input id="streetNumber" type="text" v-model="waypoint.streetNumber" required />
+        <FieldWrapper v-model="waypoint.streetNumber" label="Street number" id="streetNumber" required>
+          <input type="text" />
         </FieldWrapper>
 
-        <FieldWrapper label="City">
-          <input id="city" type="text" v-model="waypoint.city" required />
+        <FieldWrapper v-model="waypoint.city" label="City" id="city" required>
+          <input type="text" />
         </FieldWrapper>
 
-        <FieldWrapper label="Zip code">
-          <input id="zipCode" type="text" v-model="waypoint.zipCode" required />
+        <FieldWrapper v-model="waypoint.zipCode" label="Zip code" id="zipCode" required>
+          <input type="text" />
         </FieldWrapper>
 
-        <FieldWrapper label="Country">
-          <input id="country" type="text" v-model="waypoint.country" required />
+        <FieldWrapper v-model="waypoint.country" label="Country" id="country" required>
+          <input type="text" />
         </FieldWrapper>
 
-        <FieldWrapper label="Type">
-          <select id="type" v-model="waypoint.type">
+        <FieldWrapper v-model="waypoint.type" id="type" label="Type">
+          <select>
             <option :value="WaypointType.PICKUP">Pickup</option>
             <option :value="WaypointType.DELIVERY">Delivery</option>
           </select>
